@@ -1,4 +1,7 @@
 # CLAR
 CLAR is a novel Communication Learning mechanism of multi-Agent Reinforcement learning (CLAR) for heterogeneous scenarios. The above pictures shows some experiment details for CLAR.
-# PCP
-# SMAC
+## PCP
+Predator-Capture-Prey consists of two types of cooperative agents, predators and captures, as shown in PCP.png. The target of the predator agent is to find the prey. At each time step, the state space of all predator agents is a concate-nation vector, which denotes the position of the agent and the information indicating the existence of prey, other predator agents or other capture agents. The dimension of action space of the predator agent is five and the action space of all agents is the same, which consists of action move down, move up, move left, move right and stay. The second type of agent, the capture agent, aims to locate and capture prey. The capture agent differs from the predator agent in both the action space and the observation space in that the capture agent does not obtain any observation in-puts from the environment. In addition, the capture agents have an additional action capture in their action space, and when they move to the location of the prey, they take the action capture to capture the prey located in the corresponding grid. Therefore, the target of the game is that all predators find a fixed prey, all captures find prey and then capture it. Each predator receives a -0.05 penalty per time-step until it accomplishes its per-class.
+
+
+## SMAC
